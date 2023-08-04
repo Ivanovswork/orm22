@@ -48,7 +48,7 @@ jobs:
         run: pip install -r orm_migrations/requirements.txt
 
       - name: Линтинг
-        run: flake8 orm22/orm_migrations/school/ --exclude=orm22/orm_migrations/school/migrations/
+        run: flake8 orm_migrations/school/ --exclude=orm_migrations/school/migrations/
 
       - name: Тесты
         run: python manage.py test
