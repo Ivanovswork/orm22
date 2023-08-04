@@ -17,7 +17,8 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='student',
             name='teachers',
-            field=models.ManyToManyField(related_name='students', to='school.teacher'),
+            field=models.ManyToManyField(related_name='students',
+                                         to='school.teacher'),
         ),
         migrations.AlterField(
             model_name='student',
