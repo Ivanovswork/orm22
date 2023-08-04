@@ -6,4 +6,4 @@ class TestSampleView(TestCase):
         url = 'http://194.58.103.43/students/'
         client = APIClient()
         response = client.get(url)
-        self.assertEquals(1, 1)
+        self.assertIs(1, 1)
