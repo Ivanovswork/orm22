@@ -45,7 +45,7 @@ jobs:
         run: pip install --upgrade pip
 
       - name: Установка зависимостей
-        run: pip install -r requiremets.txt
+        run: pip install -r \orm22\orm_migrations\requirements.txt
 
       - name: Линтинг
         run: flake8 orm22/orm_migrations/school/ --exclude=orm22/orm_migrations/school/migrations/
