@@ -41,6 +41,9 @@ jobs:
         with:
           python-version: 3.8
 
+      - name: Апгрейд pip
+        run: pip install --upgrade pip
+
       - name: Установка зависимостей
         run: pip install -r requiremets.txt
 
