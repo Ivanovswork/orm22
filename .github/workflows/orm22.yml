@@ -42,7 +42,7 @@ jobs:
           python-version: 3.8
 
       - name: Установка зависимостей
-        run: pip intsall -r requiremets.txt
+        run: pip install -r requiremets.txt
 
       - name: Линтинг
         run: flake8 orm22/orm_migrations/school/ --exclude=orm22/orm_migrations/school/migrations/
